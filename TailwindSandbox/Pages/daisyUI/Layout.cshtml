@@ -1,0 +1,93 @@
+﻿@page
+@model TailwindSandbox.Pages.daisyUI.LayoutModel
+@* DRAWER *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Drawer</p>
+</div>
+<div class="container w-10/12 mx-auto">
+    <div class="drawer">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+            <!-- Page content here -->
+            <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label>
+        </div>
+        <div class="drawer-side">
+            <label for="my-drawer" class="drawer-overlay"></label>
+            <ul class="menu p-4 w-80 bg-base-100 text-base-content">
+                <!-- Sidebar content here -->
+                <li><a>Sidebar Item 1</a></li>
+                <li><a>Sidebar Item 2</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="drawer drawer-mobile">
+        <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content flex flex-col items-center justify-center">
+            <!-- Page content here -->
+            <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+        </div>
+        <div class="drawer-side">
+            <label for="my-drawer-2" class="drawer-overlay"></label>
+            <ul class="menu p-4 w-80 bg-base-100 text-base-content">
+                <!-- Sidebar content here -->
+                <li><a>Sidebar Item 1</a></li>
+                <li><a>Sidebar Item 2</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@* HERO *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Hero</p>
+</div>
+<div class="container w-10/12 mx-auto">
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Hero Heading</h1>
+                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn btn-primary">Hero button</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* INPUT GROUP *@
+<div class="container w-11/12 mx-auto mt-6">
+    <p class="text-2xl">Input Group</p>
+</div>
+<div class="container w-10/12 mx-auto">
+    <div class="form-control">
+        <label class="label">
+            <span class="label-text">Your Email</span>
+        </label>
+        <label class="input-group">
+            <span>Email</span>
+            <input type="text" placeholder="info@site.com" class="input input-bordered" />
+        </label>
+    </div>
+    <div class="form-control">
+        <label class="label">
+            <span class="label-text">Your Email</span>
+        </label>
+        <label class="input-group">
+            <span>Email</span>
+            <input type="text" placeholder="info@site.com" class="input input-bordered" />
+        </label>
+    </div>
+</div>
+
+@* TOAST *@
+<div class="container w-11/12 mx-auto my-6">
+    <p class="text-2xl">Toast</p>
+</div>
+<div class="container w-10/12 mx-auto">
+    <div class="toast">
+        <div class="alert alert-info">
+            <div>
+                <span>New message arrived.</span>
+            </div>
+        </div>
+    </div>
+</div>

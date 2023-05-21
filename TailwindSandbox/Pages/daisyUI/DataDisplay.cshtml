@@ -1,0 +1,242 @@
+﻿@page
+@model TailwindSandbox.Pages.daisyUI.DataDisplayModel
+@* ALERT *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Alert</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <div class="alert shadow-lg">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-info flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span>12 unread messages. Tap to see.</span>
+        </div>
+    </div>
+    <div class="alert alert-success shadow-lg">
+        <div>
+            <div>
+                <h3 class="font-bold">Header</h3>
+                <div class="text-xs">Body</div>
+            </div>
+        </div>
+        <div class="flex-none">
+            <button class="btn btn-sm">Button</button>
+        </div>
+    </div>
+</div>
+
+@* CARD *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Card</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <div class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="/images/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+        <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="card w-96 glass">
+        <figure><img src="/images/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!" /></figure>
+        <div class="card-body">
+            <h2 class="card-title">Life hack</h2>
+            <p>How to park your car at your garage?</p>
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary">Learn now!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* CAROUSEL *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Carousel</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <div class="carousel w-full">
+        <div id="item1" class="carousel-item w-full">
+            <img src="/images/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+        </div>
+        <div id="item2" class="carousel-item w-full">
+            <img src="/images/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+        </div>
+        <div id="item3" class="carousel-item w-full">
+            <img src="/images/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+        </div>
+        <div id="item4" class="carousel-item w-full">
+            <img src="/images/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+        </div>
+    </div>
+    <div class="flex justify-center w-full py-2 gap-2">
+        <a href="#item1" class="btn btn-xs">1</a>
+        <a href="#item2" class="btn btn-xs">2</a>
+        <a href="#item3" class="btn btn-xs">3</a>
+        <a href="#item4" class="btn btn-xs">4</a>
+    </div>
+    <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+            <img src="/images/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* COLLAPSE *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Collapse</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <div class="collapse">
+        <input type="checkbox" class="peer" />
+        <div class="collapse-title bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+            Click me to show/hide content
+        </div>
+        <div class="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+            <p>hello</p>
+        </div>
+    </div>
+</div>
+
+@* PROGRESS *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Progress</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <progress class="progress progress-info w-56" value="0" max="100"></progress>
+    <progress class="progress progress-info w-56" value="10" max="100"></progress>
+    <progress class="progress progress-info w-56" value="40" max="100"></progress>
+    <progress class="progress progress-info w-56" value="70" max="100"></progress>
+    <progress class="progress progress-info w-56" value="100" max="100"></progress>
+</div>
+
+@* RADIAL PROGRESS *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Radial Progress</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <div class="radial-progress" style="--value:0;">0%</div>
+    <div class="radial-progress" style="--value:20;">20%</div>
+    <div class="radial-progress" style="--value:60;">60%</div>
+    <div class="radial-progress" style="--value:80;">80%</div>
+    <div class="radial-progress" style="--value:100;">100%</div>
+</div>
+
+@* STAT *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Stat</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <div class="stats shadow">
+        <div class="stat">
+            <div class="stat-title">Total Page Views</div>
+            <div class="stat-value">89,400</div>
+            <div class="stat-desc">21% more than last month</div>
+        </div>
+    </div>
+</div>
+
+@* TABLE *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Table</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <div class="overflow-x-auto">
+        <table class="table w-full">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Job</th>
+                    <th>Favorite Color</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>Quality Control Specialist</td>
+                    <td>Blue</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>Desktop Support Technician</td>
+                    <td>Purple</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="overflow-x-auto">
+            <table class="table table-compact w-full">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Job</th>
+                        <th>company</th>
+                        <th>location</th>
+                        <th>Last Login</th>
+                        <th>Favorite Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Cy Ganderton</td>
+                        <td>Quality Control Specialist</td>
+                        <td>Littel, Schaden and Vandervort</td>
+                        <td>Canada</td>
+                        <td>12/16/2020</td>
+                        <td>Blue</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Hart Hagerty</td>
+                        <td>Desktop Support Technician</td>
+                        <td>Zemlak, Daniel and Leannon</td>
+                        <td>United States</td>
+                        <td>12/5/2020</td>
+                        <td>Purple</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@* TOOLTIP *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Tooltip</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <div class="tooltip" data-tip="hello">
+        <button class="btn">Hover me</button>
+    </div>
+</div>

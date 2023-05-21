@@ -1,0 +1,78 @@
+﻿@page
+@model TailwindSandbox.Pages.daisyUI.ActionsModel
+@* BUTTON *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Button</p>
+</div>
+<div class="container w-10/12 mx-auto">
+    <button class="btn">Button</button>
+    <button class="btn btn-primary">Button</button>
+    <button class="btn glass">Button</button>
+    <button class="btn btn-sm">Button</button>
+</div>
+
+@* DROPDOWN *@
+<div class="container w-11/12 mx-auto mt-6">
+    <p class="text-2xl">Dropdown</p>
+</div>
+<div class="container w-10/12 mx-auto">
+    <div class="dropdown">
+        <label tabindex="0" class="btn m-1">Click</label>
+        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+        </ul>
+    </div>
+    <div class="dropdown dropdown-hover">
+        <label tabindex="0" class="btn m-1">Hover</label>
+        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Item 1</a></li>
+            <li><a>Item 2</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <label tabindex="0" class="btn m-1">Card</label>
+        <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-primary text-primary-content">
+            <div class="card-body">
+                <h3 class="card-title">Card title!</h3>
+                <p>you can use any element as a dropdown.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* MODAL *@
+<div class="container w-11/12 mx-auto mt-6">
+    <p class="text-2xl">Modal</p>
+</div>
+<div class="container w-10/12 mx-auto">
+    <a href="#my-modal-2" class="btn">open modal</a>
+    <div class="modal" id="my-modal-2">
+        <div class="modal-box relative">
+            <label for="my-modal-2" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+            <p class="py-4">Modal text</p>
+            <div class="modal-action">
+                <a href="#" class="btn">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* SWAP *@
+<div class="container w-11/12 mx-auto mt-6">
+    <p class="text-2xl">Swap</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <label class="btn btn-circle swap swap-rotate">
+
+        <!-- this hidden checkbox controls the state -->
+        <input type="checkbox" />
+
+        <!-- hamburger icon -->
+        <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
+
+        <!-- close icon -->
+        <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" /></svg>
+
+    </label>
+</div>

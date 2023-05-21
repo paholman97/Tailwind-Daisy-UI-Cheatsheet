@@ -1,0 +1,96 @@
+﻿@page
+@model TailwindSandbox.Pages.daisyUI.InputModel
+@* CHECKBOXES *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Checkbox</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <input type="checkbox" checked="checked" class="checkbox" />
+    <div class="form-control">
+        <label class="label cursor-pointer">
+            <span class="label-text">Remember me</span>
+            <input type="checkbox" checked="checked" class="checkbox" />
+        </label>
+    </div>
+    <input type="checkbox" checked="checked" class="checkbox checkbox-xs" />
+    <input type="checkbox" checked="checked" class="checkbox checkbox-sm" />
+    <input type="checkbox" checked="checked" class="checkbox checkbox-md" />
+    <input type="checkbox" checked="checked" class="checkbox checkbox-lg" />
+</div>
+
+@* FILE INPUT *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">File Input</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <!-- xs -->
+    <input type="file" class="file-input file-input-bordered file-input-xs w-full max-w-xs" />
+    <!-- sm -->
+    <input type="file" class="file-input file-input-bordered file-input-sm w-full max-w-xs" />
+</div>
+
+@* RADIO *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Radio</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <div class="form-control">
+        <label class="label cursor-pointer">
+            <span class="label-text">Red</span>
+            <input type="radio" name="radio-10" class="radio checked:bg-red-500" checked />
+        </label>
+    </div>
+    <div class="form-control">
+        <label class="label cursor-pointer">
+            <span class="label-text">Blue</span>
+            <input type="radio" name="radio-10" class="radio checked:bg-blue-500" checked />
+        </label>
+    </div>
+</div>
+
+@* SELECT *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Select</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <!-- md -->
+    <select class="select select-bordered w-full max-w-xs">
+        <option selected>Normal</option>
+        <option>Normal Apple</option>
+    </select>
+    <!-- sm -->
+    <select class="select select-bordered select-sm w-full max-w-xs">
+        <option selected>Small</option>
+        <option>Small Apple</option>
+    </select>
+</div>
+
+@* TEXT INPUT *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Text Input</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <!-- sm -->
+    <input type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs" />
+    <!-- md -->
+    <input type="text" placeholder="Type here" class="input input-bordered input-md w-full max-w-xs" />
+</div>
+
+@* TEXT AREA *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Text Area</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <textarea class="textarea" placeholder="Bio"></textarea>
+</div>
+
+@* TOGGLE *@
+<div class="container w-11/12 mx-auto">
+    <p class="text-2xl">Toggle</p>
+</div>
+<div class="container w-10/12 mx-auto mb-6">
+    <input type="checkbox" class="toggle toggle-xs" checked />
+    <input type="checkbox" class="toggle toggle-sm" checked />
+    <input type="checkbox" class="toggle toggle-md" checked />
+</div>
+
